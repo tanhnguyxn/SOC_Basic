@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/SOC_basic/buoi2/RTL/H_Arbiter.v,1788251529,verilog,,C:/SOC_basic/buoi2/RTL/H_Datapath.v,,H_Arbiter,,,,,,,,
+C:/SOC_basic/buoi2/RTL/H_Datapath.v,1788251529,verilog,,C:/SOC_basic/buoi2/RTL/H_FSM_CTRL.v,,H_Datapath,,,,,,,,
+C:/SOC_basic/buoi2/RTL/H_FSM_CTRL.v,1788251529,verilog,,C:/SOC_basic/buoi2/RTL/H_Function_Core.v,,H_FSM_CTRL,,,,,,,,
+C:/SOC_basic/buoi2/RTL/H_Function_Core.v,1788251529,verilog,,C:/SOC_basic/buoi2/RTL/H_Input_Memory.v,,H_Function_Core,,,,,,,,
+C:/SOC_basic/buoi2/RTL/H_Input_Memory.v,1788251529,verilog,,C:/SOC_basic/buoi2/RTL/H_Output_Memory.v,,H_Input_Memory,,,,,,,,
+C:/SOC_basic/buoi2/RTL/H_Output_Memory.v,1788251529,verilog,,C:/SOC_basic/buoi2/TB/TB_H_Function_Core.v,,H_Output_Memory,,,,,,,,
+C:/SOC_basic/buoi2/Simulation/Simulation.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/SOC_basic/buoi2/TB/TB_H_Function_Core.v,1788278827,verilog,,,,tb_H_Function_Core,,,,,,,,

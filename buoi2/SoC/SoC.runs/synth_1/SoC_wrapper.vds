@@ -1,0 +1,302 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Sep  2 00:25:34 2026
+# Process ID: 23664
+# Current directory: C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1
+# Command line: vivado.exe -log SoC_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SoC_wrapper.tcl
+# Log file: C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/SoC_wrapper.vds
+# Journal file: C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1\vivado.jou
+# Running On: LAPTOP-RKRVUI82, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 12, Host memory: 16786 MB
+#-----------------------------------------------------------
+source SoC_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1002.012 ; gain = 117.039
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/SOC_basic/buoi2/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: synth_design -top SoC_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26268
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.965 ; gain = 331.273
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SoC_wrapper' [C:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/hdl/SoC_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'SoC' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:12]
+INFO: [Synth 8-6157] synthesizing module 'SoC_H_Acceleration_IP_0_1' [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_H_Acceleration_IP_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_H_Acceleration_IP_0_1' (0#1) [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_H_Acceleration_IP_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SoC_ps8_0_axi_periph_0' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:326]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1SNWJ68' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1SNWJ68' (0#1) [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:986]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_HSDK4Q' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:1132]
+INFO: [Synth 8-6157] synthesizing module 'SoC_auto_ds_0' [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_auto_ds_0' (0#1) [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SoC_auto_pc_0' [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_auto_pc_0' (0#1) [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_HSDK4Q' (0#1) [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:1132]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_17PNHRJ' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:1542]
+INFO: [Synth 8-6157] synthesizing module 'SoC_auto_ds_1' [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_auto_ds_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_auto_ds_1' (0#1) [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_auto_ds_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SoC_auto_pc_1' [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_auto_pc_1' (0#1) [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_17PNHRJ' (0#1) [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:1542]
+INFO: [Synth 8-6157] synthesizing module 'SoC_xbar_0' [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_xbar_0' (0#1) [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_ps8_0_axi_periph_0' (0#1) [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:326]
+INFO: [Synth 8-6157] synthesizing module 'SoC_rst_ps8_0_99M_0' [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_rst_ps8_0_99M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_rst_ps8_0_99M_0' (0#1) [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_rst_ps8_0_99M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'SoC_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:237]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'SoC_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:237]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'SoC_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:237]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'SoC_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:237]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'SoC_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:237]
+INFO: [Synth 8-6157] synthesizing module 'SoC_zynq_ultra_ps_e_0_0' [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_zynq_ultra_ps_e_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_zynq_ultra_ps_e_0_0' (0#1) [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/.Xil/Vivado-23664-LAPTOP-RKRVUI82/realtime/SoC_zynq_ultra_ps_e_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'SoC_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:244]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'SoC_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:244]
+WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'SoC_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:244]
+WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'SoC_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:244]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'SoC_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:244]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'SoC_zynq_ultra_ps_e_0_0' has 84 connections declared, but only 79 given [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:244]
+INFO: [Synth 8-6155] done synthesizing module 'SoC' (0#1) [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/synth/SoC.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_wrapper' (0#1) [C:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/hdl/SoC_wrapper.v:12]
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_17PNHRJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_17PNHRJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_HSDK4Q is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_HSDK4Q is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1SNWJ68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1SNWJ68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1SNWJ68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1SNWJ68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2519.348 ; gain = 428.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2537.270 ; gain = 446.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2537.270 ; gain = 446.578
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2537.270 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_zynq_ultra_ps_e_0_0/SoC_zynq_ultra_ps_e_0_0/SoC_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'SoC_i/zynq_ultra_ps_e_0'
+create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2567.566 ; gain = 0.039
+Finished Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_zynq_ultra_ps_e_0_0/SoC_zynq_ultra_ps_e_0_0/SoC_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'SoC_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_xbar_0/SoC_xbar_0/SoC_xbar_0_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_xbar_0/SoC_xbar_0/SoC_xbar_0_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_0/SoC_auto_ds_0/SoC_auto_ds_0_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_0/SoC_auto_ds_0/SoC_auto_ds_0_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_pc_0/SoC_auto_pc_0/SoC_auto_pc_1_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_pc_0/SoC_auto_pc_0/SoC_auto_pc_1_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_1/SoC_auto_ds_1/SoC_auto_ds_0_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Finished Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_1/SoC_auto_ds_1/SoC_auto_ds_0_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_pc_1/SoC_auto_pc_1/SoC_auto_pc_1_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_pc_1/SoC_auto_pc_1/SoC_auto_pc_1_in_context.xdc] for cell 'SoC_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0_in_context.xdc] for cell 'SoC_i/rst_ps8_0_99M'
+Finished Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0_in_context.xdc] for cell 'SoC_i/rst_ps8_0_99M'
+Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_H_Acceleration_IP_0_1/SoC_H_Acceleration_IP_0_1/SoC_H_Acceleration_IP_0_1_in_context.xdc] for cell 'SoC_i/H_Acceleration_IP_0'
+Finished Parsing XDC File [c:/SOC_basic/buoi2/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_H_Acceleration_IP_0_1/SoC_H_Acceleration_IP_0_1/SoC_H_Acceleration_IP_0_1_in_context.xdc] for cell 'SoC_i/H_Acceleration_IP_0'
+Parsing XDC File [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2567.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2567.566 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 2567.566 ; gain = 476.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 2567.566 ; gain = 476.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i/ps8_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SoC_i/H_Acceleration_IP_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 2567.566 ; gain = 476.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 2567.566 ; gain = 476.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module SoC_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 2567.566 ; gain = 476.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 3082.473 ; gain = 991.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 3082.473 ; gain = 991.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 3102.027 ; gain = 1011.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 3108.316 ; gain = 1017.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 3108.316 ; gain = 1017.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 3108.316 ; gain = 1017.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 3108.316 ; gain = 1017.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 3108.316 ; gain = 1017.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 3108.316 ; gain = 1017.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------+----------+
+|      |BlackBox name             |Instances |
++------+--------------------------+----------+
+|1     |SoC_xbar_0                |         1|
+|2     |SoC_auto_ds_0             |         1|
+|3     |SoC_auto_pc_0             |         1|
+|4     |SoC_auto_ds_1             |         1|
+|5     |SoC_auto_pc_1             |         1|
+|6     |SoC_H_Acceleration_IP_0_1 |         1|
+|7     |SoC_rst_ps8_0_99M_0       |         1|
+|8     |SoC_zynq_ultra_ps_e_0_0   |         1|
++------+--------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |SoC_H_Acceleration_IP_0 |     1|
+|2     |SoC_auto_ds             |     2|
+|4     |SoC_auto_pc             |     2|
+|6     |SoC_rst_ps8_0_99M       |     1|
+|7     |SoC_xbar                |     1|
+|8     |SoC_zynq_ultra_ps_e_0   |     1|
++------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 3108.316 ; gain = 1017.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:04 . Memory (MB): peak = 3108.316 ; gain = 987.328
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 3108.316 ; gain = 1017.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 3108.316 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3153.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5497dabd
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:34 . Memory (MB): peak = 3158.820 ; gain = 2076.648
+INFO: [Common 17-1381] The checkpoint 'C:/SOC_basic/buoi2/SoC/SoC.runs/synth_1/SoC_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SoC_wrapper_utilization_synth.rpt -pb SoC_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  2 00:27:37 2026...

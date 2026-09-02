@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC_basic/buoi2/RTL/H_Arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H_Arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC_basic/buoi2/RTL/H_Datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H_Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC_basic/buoi2/RTL/H_FSM_CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H_FSM_CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC_basic/buoi2/RTL/H_Function_Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H_Function_Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC_basic/buoi2/RTL/H_Input_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H_Input_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC_basic/buoi2/RTL/H_Output_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H_Output_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SOC_basic/buoi2/TB/TB_H_Function_Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_H_Function_Core

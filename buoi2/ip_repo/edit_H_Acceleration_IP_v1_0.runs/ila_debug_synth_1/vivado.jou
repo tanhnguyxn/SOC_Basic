@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Sep  1 23:41:26 2026
+# Process ID: 24324
+# Current directory: C:/SOC_basic/buoi2/ip_repo/edit_H_Acceleration_IP_v1_0.runs/ila_debug_synth_1
+# Command line: vivado.exe -log ila_debug.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_debug.tcl
+# Log file: C:/SOC_basic/buoi2/ip_repo/edit_H_Acceleration_IP_v1_0.runs/ila_debug_synth_1/ila_debug.vds
+# Journal file: C:/SOC_basic/buoi2/ip_repo/edit_H_Acceleration_IP_v1_0.runs/ila_debug_synth_1\vivado.jou
+# Running On: LAPTOP-RKRVUI82, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 12, Host memory: 16786 MB
+#-----------------------------------------------------------
+source ila_debug.tcl -notrace

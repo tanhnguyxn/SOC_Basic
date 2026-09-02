@@ -1,0 +1,18 @@
+# Bo qua cac thu muc va file tam cua Quartus
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+hc_output/
+.qsys_edit/
+*.jdi
+*.sld
+*.rpt
+*.summary
+*.done
+*.qws
+*.pin
+*.sof
+*.pof
+*.smsg
