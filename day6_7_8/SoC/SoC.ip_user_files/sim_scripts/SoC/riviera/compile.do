@@ -12,12 +12,12 @@ vlib riviera/axi_register_slice_v2_1_27
 vlib riviera/fifo_generator_v13_2_7
 vlib riviera/axi_data_fifo_v2_1_26
 vlib riviera/axi_crossbar_v2_1_28
+vlib riviera/lib_cdc_v1_0_2
+vlib riviera/proc_sys_reset_v5_0_13
 vlib riviera/axi_protocol_converter_v2_1_27
 vlib riviera/axi_clock_converter_v2_1_26
 vlib riviera/blk_mem_gen_v8_4_5
 vlib riviera/axi_dwidth_converter_v2_1_27
-vlib riviera/lib_cdc_v1_0_2
-vlib riviera/proc_sys_reset_v5_0_13
 
 vmap xilinx_vip riviera/xilinx_vip
 vmap xpm riviera/xpm
@@ -30,12 +30,12 @@ vmap axi_register_slice_v2_1_27 riviera/axi_register_slice_v2_1_27
 vmap fifo_generator_v13_2_7 riviera/fifo_generator_v13_2_7
 vmap axi_data_fifo_v2_1_26 riviera/axi_data_fifo_v2_1_26
 vmap axi_crossbar_v2_1_28 riviera/axi_crossbar_v2_1_28
+vmap lib_cdc_v1_0_2 riviera/lib_cdc_v1_0_2
+vmap proc_sys_reset_v5_0_13 riviera/proc_sys_reset_v5_0_13
 vmap axi_protocol_converter_v2_1_27 riviera/axi_protocol_converter_v2_1_27
 vmap axi_clock_converter_v2_1_26 riviera/axi_clock_converter_v2_1_26
 vmap blk_mem_gen_v8_4_5 riviera/blk_mem_gen_v8_4_5
 vmap axi_dwidth_converter_v2_1_27 riviera/axi_dwidth_converter_v2_1_27
-vmap lib_cdc_v1_0_2 riviera/lib_cdc_v1_0_2
-vmap proc_sys_reset_v5_0_13 riviera/proc_sys_reset_v5_0_13
 
 vlog -work xilinx_vip  -sv2k12 "+incdir+C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
 "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -56,17 +56,17 @@ vcom -work xpm -93  \
 "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/ec67/hdl" "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/abef/hdl" "+incdir+C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/src/Median_Filter_Arbiter.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/src/Median_Filter_BRAM_Bank.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/src/Median_Filter_Compare_Swap.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/src/Median_Filter_Core.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/src/Median_Filter_Datapath.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/src/Median_Filter_FSM_CTRL.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/hdl/Median_Filter_IP_v1_0_S00_AXI.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/src/Median_Filter_Input_Bank_Memories.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/src/Median_Filter_Median9.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/src/Median_Filter_Output_Memory.v" \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/f5f5/hdl/Median_Filter_IP_v1_0.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/src/Median_Filter_Arbiter.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/src/Median_Filter_BRAM_Bank.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/src/Median_Filter_Compare_Swap.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/src/Median_Filter_Core.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/src/Median_Filter_Datapath.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/src/Median_Filter_FSM_CTRL.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/hdl/Median_Filter_IP_v1_0_S00_AXI.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/src/Median_Filter_Input_Bank_Memories.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/src/Median_Filter_Median9.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/src/Median_Filter_Output_Memory.v" \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/5f39/hdl/Median_Filter_IP_v1_0.v" \
 "../../../../SoC.gen/sources_1/bd/SoC/ip/SoC_Median_Filter_IP_0_0/sim/SoC_Median_Filter_IP_0_0.v" \
 
 vlog -work axi_infrastructure_v1_1_0  -v2k5 "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/ec67/hdl" "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/abef/hdl" "+incdir+C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
@@ -105,6 +105,15 @@ vlog -work axi_crossbar_v2_1_28  -v2k5 "+incdir+../../../../SoC.gen/sources_1/bd
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/ec67/hdl" "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/abef/hdl" "+incdir+C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../../SoC.gen/sources_1/bd/SoC/ip/SoC_xbar_0/sim/SoC_xbar_0.v" \
 
+vcom -work lib_cdc_v1_0_2 -93  \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vcom -work proc_sys_reset_v5_0_13 -93  \
+"../../../../SoC.gen/sources_1/bd/SoC/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93  \
+"../../../../SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/sim/SoC_rst_ps8_0_99M_0.vhd" \
+
 vlog -work axi_protocol_converter_v2_1_27  -v2k5 "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/ec67/hdl" "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/abef/hdl" "+incdir+C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../../SoC.gen/sources_1/bd/SoC/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
@@ -122,17 +131,6 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../SoC.gen/sources_1/bd/SoC/i
 "../../../../SoC.gen/sources_1/bd/SoC/ip/SoC_auto_pc_0/sim/SoC_auto_pc_0.v" \
 "../../../../SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_1/sim/SoC_auto_ds_1.v" \
 "../../../../SoC.gen/sources_1/bd/SoC/ip/SoC_auto_pc_1/sim/SoC_auto_pc_1.v" \
-
-vcom -work lib_cdc_v1_0_2 -93  \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
-
-vcom -work proc_sys_reset_v5_0_13 -93  \
-"../../../../SoC.gen/sources_1/bd/SoC/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
-
-vcom -work xil_defaultlib -93  \
-"../../../../SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/sim/SoC_rst_ps8_0_99M_0.vhd" \
-
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/ec67/hdl" "+incdir+../../../../SoC.gen/sources_1/bd/SoC/ipshared/abef/hdl" "+incdir+C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../../SoC.gen/sources_1/bd/SoC/sim/SoC.v" \
 
 vlog -work xil_defaultlib \

@@ -70,6 +70,10 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param power.BramSDPPropagationFix 1
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableCarry8RouteBelPower 1
+set_param power.enableLutRouteBelPower 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
 
@@ -94,6 +98,8 @@ add_files C:/SOC_basic/day6_7_8/SoC/SoC.srcs/sources_1/bd/SoC/SoC.bd
 set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_zynq_ultra_ps_e_0_0/SoC_zynq_ultra_ps_e_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_zynq_ultra_ps_e_0_0/SoC_zynq_ultra_ps_e_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_xbar_0/SoC_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0.xdc]
 set_property used_in_synthesis false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_0/SoC_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_0/SoC_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_0/SoC_auto_ds_0_ooc.xdc]
@@ -102,8 +108,6 @@ set_property used_in_synthesis false [get_files -all c:/SOC_basic/day6_7_8/SoC/S
 set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_1/SoC_auto_ds_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_1/SoC_auto_ds_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_pc_1/SoC_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/SoC_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -118,6 +122,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/SOC_basic/day6_7_8/SoC/SoC.srcs/utils_1/imports/synth_1/SoC_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

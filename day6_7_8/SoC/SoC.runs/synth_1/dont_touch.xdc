@@ -13,6 +13,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SoC_zynq_ul
 # IP: bd/SoC/ip/SoC_xbar_0/SoC_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SoC_xbar_0 || ORIG_REF_NAME==SoC_xbar_0} -quiet] -quiet
 
+# IP: bd/SoC/ip/SoC_ps8_0_axi_periph_0/SoC_ps8_0_axi_periph_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SoC_ps8_0_axi_periph_0 || ORIG_REF_NAME==SoC_ps8_0_axi_periph_0} -quiet] -quiet
+
+# IP: bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SoC_rst_ps8_0_99M_0 || ORIG_REF_NAME==SoC_rst_ps8_0_99M_0} -quiet] -quiet
+
 # IP: bd/SoC/ip/SoC_auto_ds_0/SoC_auto_ds_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SoC_auto_ds_0 || ORIG_REF_NAME==SoC_auto_ds_0} -quiet] -quiet
 
@@ -25,18 +31,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SoC_auto_ds
 # IP: bd/SoC/ip/SoC_auto_pc_1/SoC_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SoC_auto_pc_1 || ORIG_REF_NAME==SoC_auto_pc_1} -quiet] -quiet
 
-# IP: bd/SoC/ip/SoC_ps8_0_axi_periph_0/SoC_ps8_0_axi_periph_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SoC_ps8_0_axi_periph_0 || ORIG_REF_NAME==SoC_ps8_0_axi_periph_0} -quiet] -quiet
-
-# IP: bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SoC_rst_ps8_0_99M_0 || ORIG_REF_NAME==SoC_rst_ps8_0_99M_0} -quiet] -quiet
-
 # XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_zynq_ultra_ps_e_0_0/SoC_zynq_ultra_ps_e_0_0_ooc.xdc
 
 # XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_zynq_ultra_ps_e_0_0/SoC_zynq_ultra_ps_e_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SoC_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==SoC_zynq_ultra_ps_e_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_xbar_0/SoC_xbar_0_ooc.xdc
+
+# XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SoC_rst_ps8_0_99M_0 || ORIG_REF_NAME==SoC_rst_ps8_0_99M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SoC_rst_ps8_0_99M_0 || ORIG_REF_NAME==SoC_rst_ps8_0_99M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_0/SoC_auto_ds_0_clocks.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SoC_auto_ds_0 || ORIG_REF_NAME==SoC_auto_ds_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -51,11 +57,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_ds_1/SoC_auto_ds_1_ooc.xdc
 
 # XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_auto_pc_1/SoC_auto_pc_1_ooc.xdc
-
-# XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0_board.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SoC_rst_ps8_0_99M_0 || ORIG_REF_NAME==SoC_rst_ps8_0_99M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/ip/SoC_rst_ps8_0_99M_0/SoC_rst_ps8_0_99M_0.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==SoC_rst_ps8_0_99M_0 || ORIG_REF_NAME==SoC_rst_ps8_0_99M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: c:/SOC_basic/day6_7_8/SoC/SoC.gen/sources_1/bd/SoC/SoC_ooc.xdc

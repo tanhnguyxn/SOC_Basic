@@ -4,7 +4,7 @@
     "xci_name": "SoC_Median_Filter_IP_0_0",
     "cell_name": "Median_Filter_IP_0",
     "component_reference": "xilinx.com:user:Median_Filter_IP:1.0",
-    "ip_revision": "4",
+    "ip_revision": "5",
     "gen_directory": "../../../../../../SoC.gen/sources_1/bd/SoC/ip/SoC_Median_Filter_IP_0_0",
     "parameters": {
       "component_parameters": {
@@ -35,7 +35,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "4" } ],
+        "IPREVISION": [ { "value": "5" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../SoC.gen/sources_1/bd/SoC/ip/SoC_Median_Filter_IP_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

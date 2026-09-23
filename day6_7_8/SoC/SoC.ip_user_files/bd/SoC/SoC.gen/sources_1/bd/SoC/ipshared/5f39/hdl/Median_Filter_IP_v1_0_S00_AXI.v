@@ -379,65 +379,62 @@
 	end
 
 	// Output register or memory read data
-	/*always @( posedge S_AXI_ACLK )
-	begin
-	  if ( S_AXI_ARESETN == 1'b0 )
-	    begin
-	      axi_rdata  <= 0;
-	    end 
-	  else
-	    begin    
-	      // When there is a valid read address (S_AXI_ARVALID) with 
-	      // acceptance of read address by the slave (axi_arready), 
-	      // output the read dada 
-	      if (slv_reg_rden)
-	        begin
-	          axi_rdata <= reg_data_out;     // register read data
-	        end   
-	    end
-	end    */
-
-	// Add user logic here
-	parameter MEM_ADDR_BITS = 12;
-    parameter BUS_ADDR_BITS = MEM_ADDR_BITS + 1;
-    parameter DIM_BITS      = 16;
-
-
-    wire                     w_addr_valid_i;
-    wire [31:0]              w_data_i;
-    wire [BUS_ADDR_BITS-1:0] w_addr_i;
-
-    wire                     r_addr_valid_i;
-    wire [BUS_ADDR_BITS-1:0] r_addr_i;;
-    wire [31:0]              r_data_o;
+	// always @( posedge S_AXI_ACLK )
+	// begin
+	  // if ( S_AXI_ARESETN == 1'b0 )
+	    // begin
+	      // axi_rdata  <= 0;
+	    // end 
+	  // else
+	    // begin    
+	      // // When there is a valid read address (S_AXI_ARVALID) with 
+	      // // acceptance of read address by the slave (axi_arready), 
+	      // // output the read dada 
+	      // if (slv_reg_rden)
+	        // begin
+	          // axi_rdata <= reg_data_out;     // register read data
+	        // end   
+	    // end
+	// end    
+    parameter MEM_ADDR_BITS 		= 12;
+    parameter BUS_ADDR_BITS 		= MEM_ADDR_BITS + 1;
+    parameter DIM_BITS      		= 16;
 	
+    wire                			w_addr_valid_i_w;
+    wire  [31:0]        			w_data_i_w;
+    wire  [BUS_ADDR_BITS-1:0]       w_addr_i_w;
+
+    wire                			r_addr_valid_i_w;
+    wire  [BUS_ADDR_BITS-1:0]       r_addr_i_w;
+    wire [31:0]         			r_data_o_w;
 	
-	
-	assign w_addr_valid_i 		= slv_reg_wren;
-	assign w_data_i				= S_AXI_WDATA;
-	assign w_addr_i				= axi_awaddr[C_S_AXI_ADDR_WIDTH-1:2];
+	assign w_addr_valid_i_w 		= slv_reg_wren;
+	assign w_data_i_w				= S_AXI_WDATA;
+	assign w_addr_i_w				= axi_awaddr[C_S_AXI_ADDR_WIDTH-1:2];
 		
-	assign r_addr_valid_i		= slv_reg_rden;
-	assign r_addr_i				= axi_araddr[C_S_AXI_ADDR_WIDTH-1:2];
+	assign r_addr_valid_i_w 		= slv_reg_rden;
+	assign r_addr_i_w				= axi_araddr[C_S_AXI_ADDR_WIDTH-1:2];
 	
 	always @(*)
 	begin
-		axi_rdata = r_data_o;
+		axi_rdata = r_data_o_w;
 	end 
-	
-	    Median_Filter_Core #(
+
+    Median_Filter_Core #(
         .MEM_ADDR_BITS (MEM_ADDR_BITS),
         .BUS_ADDR_BITS (BUS_ADDR_BITS),
         .DIM_BITS      (DIM_BITS)
-    ) u1 (
+    ) dut (
         .CLK            (S_AXI_ACLK),
         .RST            (S_AXI_ARESETN),
-        .w_addr_valid_i (w_addr_valid_i),
-        .w_data_i       (w_data_i),
-        .w_addr_i       (w_addr_i),
-        .r_addr_valid_i (r_addr_valid_i),
-        .r_addr_i       (r_addr_i),
-        .r_data_o       (r_data_o)
+
+        .w_addr_valid_i (w_addr_valid_i_w),
+        .w_data_i       (w_data_i_w),
+        .w_addr_i       (w_addr_i_w),
+
+        .r_addr_valid_i (r_addr_valid_i_w),
+        .r_addr_i       (r_addr_i_w),
+        .r_data_o       (r_data_o_w)
     );
 	// User logic ends
 
