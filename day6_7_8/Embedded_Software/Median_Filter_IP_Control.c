@@ -73,16 +73,16 @@
  * Default files: same data set used by TB_Median_Filter_Core.
  * ================================================================ */
 #define DEFAULT_INFO_FILE \
-    "/home/ubuntu/SoC_Can_Ban/Luan/Class_4/Day_6_7_8/Modeling/data/image_info.txt"
+    "/home/ubuntu/Tanh/SOC_Basic/day6_7_8/Modeling/data/image_info.txt"
 
 #define DEFAULT_INPUT_FILE \
-    "/home/ubuntu/SoC_Can_Ban/Luan/Class_4/Day_6_7_8/Modeling/data/noisy_pixels.hex"
+    "/home/ubuntu/Tanh/SOC_Basic/day6_7_8/Modeling/data/noisy_pixels.hex"
 
 #define DEFAULT_GOLDEN_FILE \
-    "/home/ubuntu/SoC_Can_Ban/Luan/Class_4/Day_6_7_8/Modeling/data/denoised_pixels.hex"
+    "/home/ubuntu/Tanh/SOC_Basic/day6_7_8/Modeling/data/denoised_pixels.hex"
 
 #define DEFAULT_OUTPUT_FILE \
-    "/home/ubuntu/SoC_Can_Ban/Luan/Class_4/Day_6_7_8/Modeling/data/soc_denoised_pixels.hex"
+    "/home/ubuntu/Tanh/SOC_Basic/day6_7_8/Modeling/data/soc_denoised_pixels.hex"
 
 /* ================================================================
  * MMIO access helpers
