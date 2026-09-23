@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../RTL/Median_Filter_Arbiter.v" \
+"../../../../../RTL/Median_Filter_BRAM_Bank.v" \
+"../../../../../RTL/Median_Filter_Compare_Swap.v" \
+"../../../../../RTL/Median_Filter_Core.v" \
+"../../../../../RTL/Median_Filter_Datapath.v" \
+"../../../../../RTL/Median_Filter_FSM_CTRL.v" \
+"../../../../../RTL/Median_Filter_Input_Bank_Memories.v" \
+"../../../../../RTL/Median_Filter_Median9.v" \
+"../../../../../RTL/Median_Filter_Output_Memory.v" \
+"../../../../../TB/TB/TB_Median_Filter_Core.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

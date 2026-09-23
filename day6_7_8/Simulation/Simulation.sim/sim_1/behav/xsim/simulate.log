@@ -1,0 +1,536 @@
+Time resolution is 1 ps
+
+============================================================
+ MEDIAN FILTER - OUT-OF-PLACE 3-BANK TILING VERIFICATION
+============================================================
+Resolution    : 256 x 256
+Input banks   : 3 x 4096 x 8 bits
+Output memory : 1 x 4096 x 8 bits (row buffer)
+Golden        : denoised_pixels.hex from median_filter.c
+============================================================
+[TB] LOAD original row 0 -> Input Bank1
+[TB] LOAD original row 1 -> Input Bank2
+[TB] LOAD original row 2 -> Input Bank3
+[TB] READ output row 0 (COPY mode)
+[TB] READ output row 1 (MEDIAN mode)
+[TB] LOAD original row 3 -> Input Bank1
+[TB] READ output row 2 (MEDIAN mode)
+[TB] LOAD original row 4 -> Input Bank2
+[TB] READ output row 3 (MEDIAN mode)
+[TB] LOAD original row 5 -> Input Bank3
+[TB] READ output row 4 (MEDIAN mode)
+[TB] LOAD original row 6 -> Input Bank1
+[TB] READ output row 5 (MEDIAN mode)
+[TB] LOAD original row 7 -> Input Bank2
+[TB] READ output row 6 (MEDIAN mode)
+[TB] LOAD original row 8 -> Input Bank3
+[TB] READ output row 7 (MEDIAN mode)
+[TB] LOAD original row 9 -> Input Bank1
+[TB] READ output row 8 (MEDIAN mode)
+[TB] LOAD original row 10 -> Input Bank2
+[TB] READ output row 9 (MEDIAN mode)
+[TB] LOAD original row 11 -> Input Bank3
+[TB] READ output row 10 (MEDIAN mode)
+[TB] LOAD original row 12 -> Input Bank1
+[TB] READ output row 11 (MEDIAN mode)
+[TB] LOAD original row 13 -> Input Bank2
+[TB] READ output row 12 (MEDIAN mode)
+[TB] LOAD original row 14 -> Input Bank3
+[TB] READ output row 13 (MEDIAN mode)
+[TB] LOAD original row 15 -> Input Bank1
+[TB] READ output row 14 (MEDIAN mode)
+[TB] LOAD original row 16 -> Input Bank2
+[TB] READ output row 15 (MEDIAN mode)
+[TB] LOAD original row 17 -> Input Bank3
+[TB] READ output row 16 (MEDIAN mode)
+[TB] LOAD original row 18 -> Input Bank1
+[TB] READ output row 17 (MEDIAN mode)
+[TB] LOAD original row 19 -> Input Bank2
+[TB] READ output row 18 (MEDIAN mode)
+[TB] LOAD original row 20 -> Input Bank3
+[TB] READ output row 19 (MEDIAN mode)
+[TB] LOAD original row 21 -> Input Bank1
+[TB] READ output row 20 (MEDIAN mode)
+[TB] LOAD original row 22 -> Input Bank2
+[TB] READ output row 21 (MEDIAN mode)
+[TB] LOAD original row 23 -> Input Bank3
+[TB] READ output row 22 (MEDIAN mode)
+[TB] LOAD original row 24 -> Input Bank1
+[TB] READ output row 23 (MEDIAN mode)
+[TB] LOAD original row 25 -> Input Bank2
+[TB] READ output row 24 (MEDIAN mode)
+[TB] LOAD original row 26 -> Input Bank3
+[TB] READ output row 25 (MEDIAN mode)
+[TB] LOAD original row 27 -> Input Bank1
+[TB] READ output row 26 (MEDIAN mode)
+[TB] LOAD original row 28 -> Input Bank2
+[TB] READ output row 27 (MEDIAN mode)
+[TB] LOAD original row 29 -> Input Bank3
+[TB] READ output row 28 (MEDIAN mode)
+[TB] LOAD original row 30 -> Input Bank1
+[TB] READ output row 29 (MEDIAN mode)
+[TB] LOAD original row 31 -> Input Bank2
+[TB] READ output row 30 (MEDIAN mode)
+[TB] LOAD original row 32 -> Input Bank3
+[TB] READ output row 31 (MEDIAN mode)
+[TB] LOAD original row 33 -> Input Bank1
+[TB] READ output row 32 (MEDIAN mode)
+[TB] LOAD original row 34 -> Input Bank2
+[TB] READ output row 33 (MEDIAN mode)
+[TB] LOAD original row 35 -> Input Bank3
+[TB] READ output row 34 (MEDIAN mode)
+[TB] LOAD original row 36 -> Input Bank1
+[TB] READ output row 35 (MEDIAN mode)
+[TB] LOAD original row 37 -> Input Bank2
+[TB] READ output row 36 (MEDIAN mode)
+[TB] LOAD original row 38 -> Input Bank3
+[TB] READ output row 37 (MEDIAN mode)
+[TB] LOAD original row 39 -> Input Bank1
+[TB] READ output row 38 (MEDIAN mode)
+[TB] LOAD original row 40 -> Input Bank2
+[TB] READ output row 39 (MEDIAN mode)
+[TB] LOAD original row 41 -> Input Bank3
+[TB] READ output row 40 (MEDIAN mode)
+[TB] LOAD original row 42 -> Input Bank1
+[TB] READ output row 41 (MEDIAN mode)
+[TB] LOAD original row 43 -> Input Bank2
+[TB] READ output row 42 (MEDIAN mode)
+[TB] LOAD original row 44 -> Input Bank3
+[TB] READ output row 43 (MEDIAN mode)
+[TB] LOAD original row 45 -> Input Bank1
+[TB] READ output row 44 (MEDIAN mode)
+[TB] LOAD original row 46 -> Input Bank2
+[TB] READ output row 45 (MEDIAN mode)
+[TB] LOAD original row 47 -> Input Bank3
+[TB] READ output row 46 (MEDIAN mode)
+[TB] LOAD original row 48 -> Input Bank1
+[TB] READ output row 47 (MEDIAN mode)
+[TB] LOAD original row 49 -> Input Bank2
+[TB] READ output row 48 (MEDIAN mode)
+[TB] LOAD original row 50 -> Input Bank3
+[TB] READ output row 49 (MEDIAN mode)
+[TB] LOAD original row 51 -> Input Bank1
+[TB] READ output row 50 (MEDIAN mode)
+[TB] LOAD original row 52 -> Input Bank2
+[TB] READ output row 51 (MEDIAN mode)
+[TB] LOAD original row 53 -> Input Bank3
+[TB] READ output row 52 (MEDIAN mode)
+[TB] LOAD original row 54 -> Input Bank1
+[TB] READ output row 53 (MEDIAN mode)
+[TB] LOAD original row 55 -> Input Bank2
+[TB] READ output row 54 (MEDIAN mode)
+[TB] LOAD original row 56 -> Input Bank3
+[TB] READ output row 55 (MEDIAN mode)
+[TB] LOAD original row 57 -> Input Bank1
+[TB] READ output row 56 (MEDIAN mode)
+[TB] LOAD original row 58 -> Input Bank2
+[TB] READ output row 57 (MEDIAN mode)
+[TB] LOAD original row 59 -> Input Bank3
+[TB] READ output row 58 (MEDIAN mode)
+[TB] LOAD original row 60 -> Input Bank1
+[TB] READ output row 59 (MEDIAN mode)
+[TB] LOAD original row 61 -> Input Bank2
+[TB] READ output row 60 (MEDIAN mode)
+[TB] LOAD original row 62 -> Input Bank3
+[TB] READ output row 61 (MEDIAN mode)
+[TB] LOAD original row 63 -> Input Bank1
+[TB] READ output row 62 (MEDIAN mode)
+[TB] LOAD original row 64 -> Input Bank2
+[TB] READ output row 63 (MEDIAN mode)
+[TB] LOAD original row 65 -> Input Bank3
+[TB] READ output row 64 (MEDIAN mode)
+[TB] LOAD original row 66 -> Input Bank1
+[TB] READ output row 65 (MEDIAN mode)
+[TB] LOAD original row 67 -> Input Bank2
+[TB] READ output row 66 (MEDIAN mode)
+[TB] LOAD original row 68 -> Input Bank3
+[TB] READ output row 67 (MEDIAN mode)
+[TB] LOAD original row 69 -> Input Bank1
+[TB] READ output row 68 (MEDIAN mode)
+[TB] LOAD original row 70 -> Input Bank2
+[TB] READ output row 69 (MEDIAN mode)
+[TB] LOAD original row 71 -> Input Bank3
+[TB] READ output row 70 (MEDIAN mode)
+[TB] LOAD original row 72 -> Input Bank1
+[TB] READ output row 71 (MEDIAN mode)
+[TB] LOAD original row 73 -> Input Bank2
+[TB] READ output row 72 (MEDIAN mode)
+[TB] LOAD original row 74 -> Input Bank3
+[TB] READ output row 73 (MEDIAN mode)
+[TB] LOAD original row 75 -> Input Bank1
+[TB] READ output row 74 (MEDIAN mode)
+[TB] LOAD original row 76 -> Input Bank2
+[TB] READ output row 75 (MEDIAN mode)
+[TB] LOAD original row 77 -> Input Bank3
+[TB] READ output row 76 (MEDIAN mode)
+[TB] LOAD original row 78 -> Input Bank1
+[TB] READ output row 77 (MEDIAN mode)
+[TB] LOAD original row 79 -> Input Bank2
+[TB] READ output row 78 (MEDIAN mode)
+[TB] LOAD original row 80 -> Input Bank3
+[TB] READ output row 79 (MEDIAN mode)
+[TB] LOAD original row 81 -> Input Bank1
+[TB] READ output row 80 (MEDIAN mode)
+[TB] LOAD original row 82 -> Input Bank2
+[TB] READ output row 81 (MEDIAN mode)
+[TB] LOAD original row 83 -> Input Bank3
+[TB] READ output row 82 (MEDIAN mode)
+[TB] LOAD original row 84 -> Input Bank1
+[TB] READ output row 83 (MEDIAN mode)
+[TB] LOAD original row 85 -> Input Bank2
+[TB] READ output row 84 (MEDIAN mode)
+[TB] LOAD original row 86 -> Input Bank3
+[TB] READ output row 85 (MEDIAN mode)
+[TB] LOAD original row 87 -> Input Bank1
+[TB] READ output row 86 (MEDIAN mode)
+[TB] LOAD original row 88 -> Input Bank2
+[TB] READ output row 87 (MEDIAN mode)
+[TB] LOAD original row 89 -> Input Bank3
+[TB] READ output row 88 (MEDIAN mode)
+[TB] LOAD original row 90 -> Input Bank1
+[TB] READ output row 89 (MEDIAN mode)
+[TB] LOAD original row 91 -> Input Bank2
+[TB] READ output row 90 (MEDIAN mode)
+[TB] LOAD original row 92 -> Input Bank3
+[TB] READ output row 91 (MEDIAN mode)
+[TB] LOAD original row 93 -> Input Bank1
+[TB] READ output row 92 (MEDIAN mode)
+[TB] LOAD original row 94 -> Input Bank2
+[TB] READ output row 93 (MEDIAN mode)
+[TB] LOAD original row 95 -> Input Bank3
+[TB] READ output row 94 (MEDIAN mode)
+[TB] LOAD original row 96 -> Input Bank1
+[TB] READ output row 95 (MEDIAN mode)
+[TB] LOAD original row 97 -> Input Bank2
+[TB] READ output row 96 (MEDIAN mode)
+[TB] LOAD original row 98 -> Input Bank3
+[TB] READ output row 97 (MEDIAN mode)
+[TB] LOAD original row 99 -> Input Bank1
+[TB] READ output row 98 (MEDIAN mode)
+[TB] LOAD original row 100 -> Input Bank2
+[TB] READ output row 99 (MEDIAN mode)
+[TB] LOAD original row 101 -> Input Bank3
+[TB] READ output row 100 (MEDIAN mode)
+[TB] LOAD original row 102 -> Input Bank1
+[TB] READ output row 101 (MEDIAN mode)
+[TB] LOAD original row 103 -> Input Bank2
+[TB] READ output row 102 (MEDIAN mode)
+[TB] LOAD original row 104 -> Input Bank3
+[TB] READ output row 103 (MEDIAN mode)
+[TB] LOAD original row 105 -> Input Bank1
+[TB] READ output row 104 (MEDIAN mode)
+[TB] LOAD original row 106 -> Input Bank2
+[TB] READ output row 105 (MEDIAN mode)
+[TB] LOAD original row 107 -> Input Bank3
+[TB] READ output row 106 (MEDIAN mode)
+[TB] LOAD original row 108 -> Input Bank1
+[TB] READ output row 107 (MEDIAN mode)
+[TB] LOAD original row 109 -> Input Bank2
+[TB] READ output row 108 (MEDIAN mode)
+[TB] LOAD original row 110 -> Input Bank3
+[TB] READ output row 109 (MEDIAN mode)
+[TB] LOAD original row 111 -> Input Bank1
+[TB] READ output row 110 (MEDIAN mode)
+[TB] LOAD original row 112 -> Input Bank2
+[TB] READ output row 111 (MEDIAN mode)
+[TB] LOAD original row 113 -> Input Bank3
+[TB] READ output row 112 (MEDIAN mode)
+[TB] LOAD original row 114 -> Input Bank1
+[TB] READ output row 113 (MEDIAN mode)
+[TB] LOAD original row 115 -> Input Bank2
+[TB] READ output row 114 (MEDIAN mode)
+[TB] LOAD original row 116 -> Input Bank3
+[TB] READ output row 115 (MEDIAN mode)
+[TB] LOAD original row 117 -> Input Bank1
+[TB] READ output row 116 (MEDIAN mode)
+[TB] LOAD original row 118 -> Input Bank2
+[TB] READ output row 117 (MEDIAN mode)
+[TB] LOAD original row 119 -> Input Bank3
+[TB] READ output row 118 (MEDIAN mode)
+[TB] LOAD original row 120 -> Input Bank1
+[TB] READ output row 119 (MEDIAN mode)
+[TB] LOAD original row 121 -> Input Bank2
+[TB] READ output row 120 (MEDIAN mode)
+[TB] LOAD original row 122 -> Input Bank3
+[TB] READ output row 121 (MEDIAN mode)
+[TB] LOAD original row 123 -> Input Bank1
+[TB] READ output row 122 (MEDIAN mode)
+[TB] LOAD original row 124 -> Input Bank2
+[TB] READ output row 123 (MEDIAN mode)
+[TB] LOAD original row 125 -> Input Bank3
+[TB] READ output row 124 (MEDIAN mode)
+[TB] LOAD original row 126 -> Input Bank1
+[TB] READ output row 125 (MEDIAN mode)
+[TB] LOAD original row 127 -> Input Bank2
+[TB] READ output row 126 (MEDIAN mode)
+[TB] LOAD original row 128 -> Input Bank3
+[TB] READ output row 127 (MEDIAN mode)
+[TB] LOAD original row 129 -> Input Bank1
+[TB] READ output row 128 (MEDIAN mode)
+[TB] LOAD original row 130 -> Input Bank2
+[TB] READ output row 129 (MEDIAN mode)
+[TB] LOAD original row 131 -> Input Bank3
+[TB] READ output row 130 (MEDIAN mode)
+[TB] LOAD original row 132 -> Input Bank1
+[TB] READ output row 131 (MEDIAN mode)
+[TB] LOAD original row 133 -> Input Bank2
+[TB] READ output row 132 (MEDIAN mode)
+[TB] LOAD original row 134 -> Input Bank3
+[TB] READ output row 133 (MEDIAN mode)
+[TB] LOAD original row 135 -> Input Bank1
+[TB] READ output row 134 (MEDIAN mode)
+[TB] LOAD original row 136 -> Input Bank2
+[TB] READ output row 135 (MEDIAN mode)
+[TB] LOAD original row 137 -> Input Bank3
+[TB] READ output row 136 (MEDIAN mode)
+[TB] LOAD original row 138 -> Input Bank1
+[TB] READ output row 137 (MEDIAN mode)
+[TB] LOAD original row 139 -> Input Bank2
+[TB] READ output row 138 (MEDIAN mode)
+[TB] LOAD original row 140 -> Input Bank3
+[TB] READ output row 139 (MEDIAN mode)
+[TB] LOAD original row 141 -> Input Bank1
+[TB] READ output row 140 (MEDIAN mode)
+[TB] LOAD original row 142 -> Input Bank2
+[TB] READ output row 141 (MEDIAN mode)
+[TB] LOAD original row 143 -> Input Bank3
+[TB] READ output row 142 (MEDIAN mode)
+[TB] LOAD original row 144 -> Input Bank1
+[TB] READ output row 143 (MEDIAN mode)
+[TB] LOAD original row 145 -> Input Bank2
+[TB] READ output row 144 (MEDIAN mode)
+[TB] LOAD original row 146 -> Input Bank3
+[TB] READ output row 145 (MEDIAN mode)
+[TB] LOAD original row 147 -> Input Bank1
+[TB] READ output row 146 (MEDIAN mode)
+[TB] LOAD original row 148 -> Input Bank2
+[TB] READ output row 147 (MEDIAN mode)
+[TB] LOAD original row 149 -> Input Bank3
+[TB] READ output row 148 (MEDIAN mode)
+[TB] LOAD original row 150 -> Input Bank1
+[TB] READ output row 149 (MEDIAN mode)
+[TB] LOAD original row 151 -> Input Bank2
+[TB] READ output row 150 (MEDIAN mode)
+[TB] LOAD original row 152 -> Input Bank3
+[TB] READ output row 151 (MEDIAN mode)
+[TB] LOAD original row 153 -> Input Bank1
+[TB] READ output row 152 (MEDIAN mode)
+[TB] LOAD original row 154 -> Input Bank2
+[TB] READ output row 153 (MEDIAN mode)
+[TB] LOAD original row 155 -> Input Bank3
+[TB] READ output row 154 (MEDIAN mode)
+[TB] LOAD original row 156 -> Input Bank1
+[TB] READ output row 155 (MEDIAN mode)
+[TB] LOAD original row 157 -> Input Bank2
+[TB] READ output row 156 (MEDIAN mode)
+[TB] LOAD original row 158 -> Input Bank3
+[TB] READ output row 157 (MEDIAN mode)
+[TB] LOAD original row 159 -> Input Bank1
+[TB] READ output row 158 (MEDIAN mode)
+[TB] LOAD original row 160 -> Input Bank2
+[TB] READ output row 159 (MEDIAN mode)
+[TB] LOAD original row 161 -> Input Bank3
+[TB] READ output row 160 (MEDIAN mode)
+[TB] LOAD original row 162 -> Input Bank1
+[TB] READ output row 161 (MEDIAN mode)
+[TB] LOAD original row 163 -> Input Bank2
+[TB] READ output row 162 (MEDIAN mode)
+[TB] LOAD original row 164 -> Input Bank3
+[TB] READ output row 163 (MEDIAN mode)
+[TB] LOAD original row 165 -> Input Bank1
+[TB] READ output row 164 (MEDIAN mode)
+[TB] LOAD original row 166 -> Input Bank2
+[TB] READ output row 165 (MEDIAN mode)
+[TB] LOAD original row 167 -> Input Bank3
+[TB] READ output row 166 (MEDIAN mode)
+[TB] LOAD original row 168 -> Input Bank1
+[TB] READ output row 167 (MEDIAN mode)
+[TB] LOAD original row 169 -> Input Bank2
+[TB] READ output row 168 (MEDIAN mode)
+[TB] LOAD original row 170 -> Input Bank3
+[TB] READ output row 169 (MEDIAN mode)
+[TB] LOAD original row 171 -> Input Bank1
+[TB] READ output row 170 (MEDIAN mode)
+[TB] LOAD original row 172 -> Input Bank2
+[TB] READ output row 171 (MEDIAN mode)
+[TB] LOAD original row 173 -> Input Bank3
+[TB] READ output row 172 (MEDIAN mode)
+[TB] LOAD original row 174 -> Input Bank1
+[TB] READ output row 173 (MEDIAN mode)
+[TB] LOAD original row 175 -> Input Bank2
+[TB] READ output row 174 (MEDIAN mode)
+[TB] LOAD original row 176 -> Input Bank3
+[TB] READ output row 175 (MEDIAN mode)
+[TB] LOAD original row 177 -> Input Bank1
+[TB] READ output row 176 (MEDIAN mode)
+[TB] LOAD original row 178 -> Input Bank2
+[TB] READ output row 177 (MEDIAN mode)
+[TB] LOAD original row 179 -> Input Bank3
+[TB] READ output row 178 (MEDIAN mode)
+[TB] LOAD original row 180 -> Input Bank1
+[TB] READ output row 179 (MEDIAN mode)
+[TB] LOAD original row 181 -> Input Bank2
+[TB] READ output row 180 (MEDIAN mode)
+[TB] LOAD original row 182 -> Input Bank3
+[TB] READ output row 181 (MEDIAN mode)
+[TB] LOAD original row 183 -> Input Bank1
+[TB] READ output row 182 (MEDIAN mode)
+[TB] LOAD original row 184 -> Input Bank2
+[TB] READ output row 183 (MEDIAN mode)
+[TB] LOAD original row 185 -> Input Bank3
+[TB] READ output row 184 (MEDIAN mode)
+[TB] LOAD original row 186 -> Input Bank1
+[TB] READ output row 185 (MEDIAN mode)
+[TB] LOAD original row 187 -> Input Bank2
+[TB] READ output row 186 (MEDIAN mode)
+[TB] LOAD original row 188 -> Input Bank3
+[TB] READ output row 187 (MEDIAN mode)
+[TB] LOAD original row 189 -> Input Bank1
+[TB] READ output row 188 (MEDIAN mode)
+[TB] LOAD original row 190 -> Input Bank2
+[TB] READ output row 189 (MEDIAN mode)
+[TB] LOAD original row 191 -> Input Bank3
+[TB] READ output row 190 (MEDIAN mode)
+[TB] LOAD original row 192 -> Input Bank1
+[TB] READ output row 191 (MEDIAN mode)
+[TB] LOAD original row 193 -> Input Bank2
+[TB] READ output row 192 (MEDIAN mode)
+[TB] LOAD original row 194 -> Input Bank3
+[TB] READ output row 193 (MEDIAN mode)
+[TB] LOAD original row 195 -> Input Bank1
+[TB] READ output row 194 (MEDIAN mode)
+[TB] LOAD original row 196 -> Input Bank2
+[TB] READ output row 195 (MEDIAN mode)
+[TB] LOAD original row 197 -> Input Bank3
+[TB] READ output row 196 (MEDIAN mode)
+[TB] LOAD original row 198 -> Input Bank1
+[TB] READ output row 197 (MEDIAN mode)
+[TB] LOAD original row 199 -> Input Bank2
+[TB] READ output row 198 (MEDIAN mode)
+[TB] LOAD original row 200 -> Input Bank3
+[TB] READ output row 199 (MEDIAN mode)
+[TB] LOAD original row 201 -> Input Bank1
+[TB] READ output row 200 (MEDIAN mode)
+[TB] LOAD original row 202 -> Input Bank2
+[TB] READ output row 201 (MEDIAN mode)
+[TB] LOAD original row 203 -> Input Bank3
+[TB] READ output row 202 (MEDIAN mode)
+[TB] LOAD original row 204 -> Input Bank1
+[TB] READ output row 203 (MEDIAN mode)
+[TB] LOAD original row 205 -> Input Bank2
+[TB] READ output row 204 (MEDIAN mode)
+[TB] LOAD original row 206 -> Input Bank3
+[TB] READ output row 205 (MEDIAN mode)
+[TB] LOAD original row 207 -> Input Bank1
+[TB] READ output row 206 (MEDIAN mode)
+[TB] LOAD original row 208 -> Input Bank2
+[TB] READ output row 207 (MEDIAN mode)
+[TB] LOAD original row 209 -> Input Bank3
+[TB] READ output row 208 (MEDIAN mode)
+[TB] LOAD original row 210 -> Input Bank1
+[TB] READ output row 209 (MEDIAN mode)
+[TB] LOAD original row 211 -> Input Bank2
+[TB] READ output row 210 (MEDIAN mode)
+[TB] LOAD original row 212 -> Input Bank3
+[TB] READ output row 211 (MEDIAN mode)
+[TB] LOAD original row 213 -> Input Bank1
+[TB] READ output row 212 (MEDIAN mode)
+[TB] LOAD original row 214 -> Input Bank2
+[TB] READ output row 213 (MEDIAN mode)
+[TB] LOAD original row 215 -> Input Bank3
+[TB] READ output row 214 (MEDIAN mode)
+[TB] LOAD original row 216 -> Input Bank1
+[TB] READ output row 215 (MEDIAN mode)
+[TB] LOAD original row 217 -> Input Bank2
+[TB] READ output row 216 (MEDIAN mode)
+[TB] LOAD original row 218 -> Input Bank3
+[TB] READ output row 217 (MEDIAN mode)
+[TB] LOAD original row 219 -> Input Bank1
+[TB] READ output row 218 (MEDIAN mode)
+[TB] LOAD original row 220 -> Input Bank2
+[TB] READ output row 219 (MEDIAN mode)
+[TB] LOAD original row 221 -> Input Bank3
+[TB] READ output row 220 (MEDIAN mode)
+[TB] LOAD original row 222 -> Input Bank1
+[TB] READ output row 221 (MEDIAN mode)
+[TB] LOAD original row 223 -> Input Bank2
+[TB] READ output row 222 (MEDIAN mode)
+[TB] LOAD original row 224 -> Input Bank3
+[TB] READ output row 223 (MEDIAN mode)
+[TB] LOAD original row 225 -> Input Bank1
+[TB] READ output row 224 (MEDIAN mode)
+[TB] LOAD original row 226 -> Input Bank2
+[TB] READ output row 225 (MEDIAN mode)
+[TB] LOAD original row 227 -> Input Bank3
+[TB] READ output row 226 (MEDIAN mode)
+[TB] LOAD original row 228 -> Input Bank1
+[TB] READ output row 227 (MEDIAN mode)
+[TB] LOAD original row 229 -> Input Bank2
+[TB] READ output row 228 (MEDIAN mode)
+[TB] LOAD original row 230 -> Input Bank3
+[TB] READ output row 229 (MEDIAN mode)
+[TB] LOAD original row 231 -> Input Bank1
+[TB] READ output row 230 (MEDIAN mode)
+[TB] LOAD original row 232 -> Input Bank2
+[TB] READ output row 231 (MEDIAN mode)
+[TB] LOAD original row 233 -> Input Bank3
+[TB] READ output row 232 (MEDIAN mode)
+[TB] LOAD original row 234 -> Input Bank1
+[TB] READ output row 233 (MEDIAN mode)
+[TB] LOAD original row 235 -> Input Bank2
+[TB] READ output row 234 (MEDIAN mode)
+[TB] LOAD original row 236 -> Input Bank3
+[TB] READ output row 235 (MEDIAN mode)
+[TB] LOAD original row 237 -> Input Bank1
+[TB] READ output row 236 (MEDIAN mode)
+[TB] LOAD original row 238 -> Input Bank2
+[TB] READ output row 237 (MEDIAN mode)
+[TB] LOAD original row 239 -> Input Bank3
+[TB] READ output row 238 (MEDIAN mode)
+[TB] LOAD original row 240 -> Input Bank1
+[TB] READ output row 239 (MEDIAN mode)
+[TB] LOAD original row 241 -> Input Bank2
+[TB] READ output row 240 (MEDIAN mode)
+[TB] LOAD original row 242 -> Input Bank3
+[TB] READ output row 241 (MEDIAN mode)
+[TB] LOAD original row 243 -> Input Bank1
+[TB] READ output row 242 (MEDIAN mode)
+[TB] LOAD original row 244 -> Input Bank2
+[TB] READ output row 243 (MEDIAN mode)
+[TB] LOAD original row 245 -> Input Bank3
+[TB] READ output row 244 (MEDIAN mode)
+[TB] LOAD original row 246 -> Input Bank1
+[TB] READ output row 245 (MEDIAN mode)
+[TB] LOAD original row 247 -> Input Bank2
+[TB] READ output row 246 (MEDIAN mode)
+[TB] LOAD original row 248 -> Input Bank3
+[TB] READ output row 247 (MEDIAN mode)
+[TB] LOAD original row 249 -> Input Bank1
+[TB] READ output row 248 (MEDIAN mode)
+[TB] LOAD original row 250 -> Input Bank2
+[TB] READ output row 249 (MEDIAN mode)
+[TB] LOAD original row 251 -> Input Bank3
+[TB] READ output row 250 (MEDIAN mode)
+[TB] LOAD original row 252 -> Input Bank1
+[TB] READ output row 251 (MEDIAN mode)
+[TB] LOAD original row 253 -> Input Bank2
+[TB] READ output row 252 (MEDIAN mode)
+[TB] LOAD original row 254 -> Input Bank3
+[TB] READ output row 253 (MEDIAN mode)
+[TB] LOAD original row 255 -> Input Bank1
+[TB] READ output row 254 (MEDIAN mode)
+[TB] READ output row 255 (COPY mode)
+
+============================================================
+                    TEST SUMMARY
+============================================================
+Rows loaded : 256
+Rows read   : 256
+PASS pixels : 65536
+FAIL pixels : 0
+DONE        : 1
+RTL output  : C:/SOC_basic/day6_7_8/Modeling/data/rtl_tiling_denoised_pixels.hex
+============================================================
+RESULT      : ALL TESTS PASSED - RTL MATCHES C GOLDEN
+============================================================
+$finish called at time : 5278990 ns : File "C:/SOC_basic/day6_7_8/TB/TB/TB_Median_Filter_Core.v" Line 428

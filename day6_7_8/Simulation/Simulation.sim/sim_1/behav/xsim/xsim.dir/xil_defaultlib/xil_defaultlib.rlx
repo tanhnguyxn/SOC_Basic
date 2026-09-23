@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/SOC_basic/day6_7_8/RTL/Median_Filter_Arbiter.v,1788215108,verilog,,C:/SOC_basic/day6_7_8/RTL/Median_Filter_BRAM_Bank.v,,Median_Filter_Arbiter,,,,,,,,
+C:/SOC_basic/day6_7_8/RTL/Median_Filter_BRAM_Bank.v,1788213926,verilog,,C:/SOC_basic/day6_7_8/RTL/Median_Filter_Compare_Swap.v,,Median_Filter_BRAM_Bank,,,,,,,,
+C:/SOC_basic/day6_7_8/RTL/Median_Filter_Compare_Swap.v,1788213926,verilog,,C:/SOC_basic/day6_7_8/RTL/Median_Filter_Core.v,,Median_Filter_Compare_Swap,,,,,,,,
+C:/SOC_basic/day6_7_8/RTL/Median_Filter_Core.v,1789784876,verilog,,C:/SOC_basic/day6_7_8/RTL/Median_Filter_Datapath.v,,Median_Filter_Core,,,,,,,,
+C:/SOC_basic/day6_7_8/RTL/Median_Filter_Datapath.v,1788213926,verilog,,C:/SOC_basic/day6_7_8/RTL/Median_Filter_FSM_CTRL.v,,Median_Filter_Datapath,,,,,,,,
+C:/SOC_basic/day6_7_8/RTL/Median_Filter_FSM_CTRL.v,1788213926,verilog,,C:/SOC_basic/day6_7_8/RTL/Median_Filter_Input_Bank_Memories.v,,Median_Filter_FSM_CTRL,,,,,,,,
+C:/SOC_basic/day6_7_8/RTL/Median_Filter_Input_Bank_Memories.v,1788213926,verilog,,C:/SOC_basic/day6_7_8/RTL/Median_Filter_Median9.v,,Median_Filter_Input_Bank_Memories,,,,,,,,
+C:/SOC_basic/day6_7_8/RTL/Median_Filter_Median9.v,1788213926,verilog,,C:/SOC_basic/day6_7_8/RTL/Median_Filter_Output_Memory.v,,Median_Filter_Median9,,,,,,,,
+C:/SOC_basic/day6_7_8/RTL/Median_Filter_Output_Memory.v,1788213926,verilog,,C:/SOC_basic/day6_7_8/TB/TB/TB_Median_Filter_Core.v,,Median_Filter_Output_Memory,,,,,,,,
+C:/SOC_basic/day6_7_8/Simulation/Simulation.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/SOC_basic/day6_7_8/TB/TB/TB_Median_Filter_Core.v,1789785438,verilog,,,,TB_Median_Filter_Core,,,,,,,,

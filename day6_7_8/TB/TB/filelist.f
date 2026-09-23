@@ -1,0 +1,10 @@
+../RTL/Median_Filter_Compare_Swap.v
+../RTL/Median_Filter_Median9.v
+../RTL/Median_Filter_BRAM_Bank.v
+../RTL/Median_Filter_Input_Bank_Memories.v
+../RTL/Median_Filter_Output_Memory.v
+../RTL/Median_Filter_Datapath.v
+../RTL/Median_Filter_FSM_CTRL.v
+../RTL/Median_Filter_Arbiter.v
+../RTL/Median_Filter_Core.v
+TB_Median_Filter_Core.v
